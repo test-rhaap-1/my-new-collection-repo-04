@@ -1,0 +1,21 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: my_new_collection_namespace_04.my_new_collection_name_04
+  description: test collection 04
+  tags:
+    - ansible
+    - collection
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: test-rhaap-1/my-new-collection-repo-04
+  links:
+    - url: https://devspaces.apps.ansible-rhdh-dev.testing.ansible.com/#https://github.com/test-rhaap-1/my-new-collection-repo-04
+      title: Open Ansible project in OpenShift Dev Spaces
+      icon: web
+spec:
+  type: collection-project
+  system: rhdh-opertoar-13
+  lifecycle: production
+  owner: sshedmake

@@ -1,0 +1,15 @@
+schemaVersion: 2.2.2
+metadata:
+  name: my_new_collection_namespace_04.my_new_collection_name_04-ad051935
+components:
+  - name: tooling-container
+    container:
+      image: ghcr.io/ansible/ansible-workspace-env-reference:latest
+      memoryRequest: 256M
+      memoryLimit: 6Gi
+      cpuRequest: 250m
+      cpuLimit: 2000m
+      args: ["tail", "-f", "/dev/null"]
+      env:
+        - name: KUBEDOCK_ENABLED
+          value: "true"
